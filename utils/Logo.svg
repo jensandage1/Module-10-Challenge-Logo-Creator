@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="300" height="200">
-      <characters x="10" y = "10" fill="blue">wow</characters>
-        <shape>undefined</shape>
-
-         
+      <characters fill="green">jen</characters>
+        <shape><polygon points="150, 18 244, 182 56, 182" stroke="black" fill="blue" stroke-width="5"/></shape>        
 </svg>
     

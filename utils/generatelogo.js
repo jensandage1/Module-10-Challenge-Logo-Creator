@@ -3,11 +3,11 @@ function generateLogo ({characters, textColor, shape, shapeColor}){
     function createShape(shape, shapeColor){
         const userInput = "";
         if(userInput === "circle") {
-            return shape = `<circle cx="25" cy="75" r="20" stroke="black" fill="${shapeColor}" stroke-width="5"/>`
+            return shape = `<circle cx="150" cy="100" r="80" stroke="black" fill="${shapeColor}" stroke-width="5"/>`
         } else if (userInput === "square") {
-            return shape = `<rect x="10" y="10" width="30" height="30" stroke="black" fill="${shapeColor}" stroke-width="5"/>`    
+            return shape = `<rect x="90" y="40" width="120" height="120" stroke="black" fill="${shapeColor}" stroke-width="5"/>`    
         } else {
-            return shape = `<polygon points="12 2, 22 22, 2 22" stroke="black" fill="${shapeColor}" stroke-width="5"/>`
+            return shape = `<polygon points="150, 18 244, 182 56, 182" stroke="black" fill="${shapeColor}" stroke-width="5"/>`
          }
         };
 
@@ -17,10 +17,8 @@ function generateLogo ({characters, textColor, shape, shapeColor}){
     const svg = 
 `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="300" height="200">
-      <characters x="10" y = "10" fill="${textColor}">${characters}</characters>
-        <shape>${finishedShape}</shape>
-
-         
+      <characters fill="${textColor}">${characters}</characters>
+        <shape>${finishedShape}</shape>        
 </svg>
     `
 
