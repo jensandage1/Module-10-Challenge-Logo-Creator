@@ -5,23 +5,19 @@ const generateLogo = require("./generatelogo");
 const validateColor = require("validate-color").default;
 
 
-// const charLength = async (input) => {
-//     if (input !== 3) {
-//         return 'Invalid: You must input exactly 3 characters';
-//     } else { 
-//         return true}
-// }//not working boo. 
-
-
-
-
 
 const question = [
     {
         type: "input",
         name: "characters",
         message: "Input 3 characters you would like to use for your logo.",
-        // validate: charLength not sure what to do here. 
+        validate: (characters) => {
+            if(characters.length !== 3) {
+                return 'Invalid. You must input exactly 3 characters.'
+            }
+
+            return true;
+        }
             
     },
     {
