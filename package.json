@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jensandage1/Module-10-Challenge-Logo-Creator#readme",
   "dependencies": {
+    "jest": "^29.6.1",
     "validate-color": "^2.2.4",
     "validate.io-length": "^1.0.2"
   }
