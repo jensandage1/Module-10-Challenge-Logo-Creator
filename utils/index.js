@@ -46,6 +46,7 @@ const question = [
 
 
 
+
 const createSvg = (answers) => {
     const svgTemplate = generateLogo(answers);
 

@@ -11,7 +11,7 @@ function generateLogo ({characters, textColor, shape, shapeColor}){
          }
         };
 
-       let finishedShape = createShape(shape,shapeColor);
+       const finishedShape = createShape(shape,shapeColor);
 
     const svg = 
 `
@@ -27,5 +27,3 @@ function generateLogo ({characters, textColor, shape, shapeColor}){
 module.exports = generateLogo;
 
 //finished shape not populating with anything but the triangle option
-//This XML file does not appear to have any style information associated with it. The document tree is shown below. 
-//above is error getting when opening the svg
