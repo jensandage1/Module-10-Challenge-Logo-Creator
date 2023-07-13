@@ -14,11 +14,11 @@ function generateLogo ({characters, textColor, shape, shapeColor}){
     const userInput = "";
     function createShape(shapeColor) {
         if(userInput === "Circle"){
-            return `<${circle} stroke="none" fill="${shapeColor}" stroke-width="5"/>`
+            return `<${circle.shape} stroke="none" fill="${shapeColor}" stroke-width="5"/>`
         } else if (userInput === "Square"){
-            return `<${square} stroke="none" fill="${shapeColor}" stroke-width="5"/>`
+            return `<${square.shape} stroke="none" fill="${shapeColor}" stroke-width="5"/>`
         } else {
-            return `<${triangle} stroke="none" fill="${shapeColor}" stroke-width="5"/>`
+            return `<${triangle.shape} stroke="none" fill="${shapeColor}" stroke-width="5"/>`
         }
     }
     
