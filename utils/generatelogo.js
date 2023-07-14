@@ -35,4 +35,4 @@ function generateLogo ({characters, textColor, shape, shapeColor}){
 
 module.exports = generateLogo;
 
-//finished shape not populating with anything but the triangle option
+
