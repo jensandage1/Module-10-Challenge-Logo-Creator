@@ -7,17 +7,18 @@ function generateLogo ({characters, textColor, shape, shapeColor}){
     const square = new MyShape('rect x="90" y="40" width="120" height="120"');
     const triangle = new MyShape('polygon points="150, 18 244, 182 56, 182"');
     
-   
+
     function createShape(shapeColor) {
-         const userInput = "";
-        if(userInput === "Circle"){
+       
+        if(shape === "Circle"){
             return `<${circle.shape} stroke="none" fill="${shapeColor}" stroke-width="5"/>`
-        } else if (userInput === "Square"){
+        } else if (shape === "Square"){
             return `<${square.shape} stroke="none" fill="${shapeColor}" stroke-width="5"/>`
         } else {
             return `<${triangle.shape} stroke="none" fill="${shapeColor}" stroke-width="5"/>`
         }
-    }
+    } 
+     
     
     const finishedShape = createShape(shapeColor);
 
