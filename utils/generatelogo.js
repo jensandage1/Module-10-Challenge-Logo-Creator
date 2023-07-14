@@ -4,15 +4,12 @@ function generateLogo ({characters, textColor, shape, shapeColor}){
         this.shape=shape;
     }
     const circle = new MyShape('circle cx="150" cy="100" r="80"');
-    
     const square = new MyShape('rect x="90" y="40" width="120" height="120"');
-    
     const triangle = new MyShape('polygon points="150, 18 244, 182 56, 182"');
     
-    
-    
-    const userInput = "";
+   
     function createShape(shapeColor) {
+         const userInput = "";
         if(userInput === "Circle"){
             return `<${circle.shape} stroke="none" fill="${shapeColor}" stroke-width="5"/>`
         } else if (userInput === "Square"){
@@ -23,7 +20,7 @@ function generateLogo ({characters, textColor, shape, shapeColor}){
     }
     
     const finishedShape = createShape(shapeColor);
-    
+
     const svg = 
     `
     <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">

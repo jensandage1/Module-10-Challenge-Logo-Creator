@@ -1,4 +1,4 @@
-const FinalShape = require('../index');
+const FinalShape = require('../generatelogo.js');
 
 describe('FinalShape', () => {
     describe ('circle', () => {
